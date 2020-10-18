@@ -27,53 +27,43 @@
 
 @import @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 
-h1 {
-  border-right: solid 3px rgba(0,255,0,.75);
-  margin: auto;
-  white-space: nowrap;
-  overflow: hidden;    
-  font-family: 'Source Code Pro', monospace;  
-  font-size: 32px;
-  color: rgba(255,255,255,.70);
+
+/*----------------------------------godfidence glow----------------------------------------------------*/
+
+.glow {
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
 }
 
-/* Animation */
-h1 {
-  animation: animated-text 4s steps(29) 1s 1 normal both,
-             animated-cursor 600ms steps(29) infinite;
-}
-
-h2{
-	color: #fff;
-}
-/* text animation */
-
-@keyframes animated-text{
-  from{width: 0;}
-  to{width: 360px;}
-}
-
-/* cursor animations */
-
-@keyframes animated-cursor{
-  from{border-right-color: rgba(0,255,0,.75);}
-  to{border-right-color: transparent;}
-}
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #5A6AD2, 0 0 40px #5A6AD2, 0 0 50px #5A6AD2, 0 0 60px #5A6AD2, 0 0 70px #5A6AD2;
+  }
   
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #261174, 0 0 40px #261174, 0 0 50px #261174, 0 0 60px #261174, 0 0 70px #261174, 0 0 80px #261174;
+  }
+}
+/*----------------------------------------border hover----------------------------------------------------*/
 
 #thumbnail:hover {
     display:block;
     z-index:999;
     transform: scale(1.1);
     border: 2px solid #f2f2f2;
-	  border-radius: 5px;}
+    border-radius: 5px;}
 
 .flip-card {
   background-color: transparent;
   width: 270px;
   height: 170px;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+
 }
 
 /* This container is needed to position the front and back side */
@@ -118,19 +108,19 @@ h2{
 
 /*----------------------------------for hobbies field----------------------------------------------------------------*/
 .hover03 figure img {
-	-webkit-transform: scale(1.3);
-	transform: scale(1.3);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-	max-height: 75%;
-	max-width: 75%;
-	margin: auto;
-	margin-bottom:90px; /*to have the space under the image*/
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  max-height: 75%;
+  max-width: 75%;
+  margin: auto;
+  margin-bottom:90px; /*to have the space under the image*/
 
 }
 .hover03 figure:hover img {
-	-webkit-transform: scale(1);
-	transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
 
 }
 
@@ -373,29 +363,76 @@ h2{
 }
 
 
-/*------------------------------------------------glowing text------------------------------------*/
 
 
-
-.glow {
-  font-size: 20px;
-  color: #fff;
-  text-align: center;
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
+/*-------------------------------------I am divya text-------------------------------------------------*/
+h1 {
+  border-right: solid 3px rgba(0,255,0,.75);
+  margin: auto;
+  white-space: nowrap;
+  overflow: hidden;    
+  font-family: 'Source Code Pro', monospace;  
+  color: rgba(255,255,255,.70);
+  font-size: 40px;
 }
 
-@-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #5A6AD2, 0 0 40px #5A6AD2, 0 0 50px #5A6AD2, 0 0 60px #5A6AD2, 0 0 70px #5A6AD2;
-  }
-  
-  to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #261174, 0 0 40px #261174, 0 0 50px #261174, 0 0 60px #261174, 0 0 70px #261174, 0 0 80px #261174;
-  }
+
+
+/* Animation */
+h1 {
+  animation: animated-text 4s steps(29) 1s 1 normal both,
+             animated-cursor 600ms steps(29) infinite;
 }
-/*----------------------------------------------------------------------------------------------------------*/
+
+h2{
+	color: #fff;
+}
+/* text animation */
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 470px;}
+}
+
+
+@media only screen and (max-width: 450px) {
+  h1 {
+    font-size: 25px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+  .flip-card {
+    width: 230px;
+    height: 150px;
+    display: table;
+    margin:auto;
+    margin-bottom: 25px;
+
+  }
+  .flip-card-back{
+    height:155px;
+  }
+
+  p{
+    font-size: 14px;
+}
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 280px;}
+}
+
+
+/* cursor animations */
+
+
+@keyframes animated-cursor{
+  from{border-right-color: rgba(0,255,0,.75);}
+  to{border-right-color: transparent;}
+}
+
+
 
 </style>
 
@@ -529,22 +566,22 @@ h2{
         <div class="card">
           <div class="card-block">
             <h2>Education</h2>
-            <div class="row" style="display: table; margin: auto">
+            <div class="row" style="display: table;margin: auto">
               <div class="col-md-4">
                 <div class="education-experience">
                 	<div class="flip-card">
-					  <div class="flip-card-inner">
+					         <div class="flip-card-inner">
 					           <div class="flip-card-front">
-                  		<img src="spit.jpeg" class="card-img-top img-responsive" style="height: 170px;"alt="...">
+                  		<img src="spit.jpeg" class="card-img-top img-responsive" style="height: 100% width100%;"alt="...">
                   		</div>
                       <div class="flip-card-back">
                       <h6 class="date">2018-Persuing</h6>
 	                  <h4>Computer Engineering(BTECH)</h4>
 	                  <p><strong>Sardar Patel Institute Of Technology(SPIT)</strong></p>
 	                  <p><strong>CGPA - 8.24</strong></p>
+				          </div>
+				        </div>
 				    </div>
-				  </div>
-				</div>
                   
                   <!-----------------------------------------------------------------------
                   <img id="picture1" src="ssc.jpeg" title="1" class="hide" width="310px">
@@ -556,7 +593,7 @@ h2{
                 <div class="flip-card">
 				<div class="flip-card-inner">
 				      <div class="flip-card-front">
-                 <img src="gpm.png" class="card-img-top img-responsive" style="height: 170px;" alt="...">
+                 <img src="gpm.png" class="card-img-top img-responsive" style="height: 100% width100%;" alt="...">
                  </div>
                   <div class="flip-card-back">
                   <h6 class="date">2015-2018</h6>
@@ -577,7 +614,7 @@ h2{
                 <div class="flip-card">
 				        <div class="flip-card-inner">
 				        <div class="flip-card-front">
-                <img src="olrs.jpeg" class="card-img-top img-responsive" style="height: 170px; width: 510px" alt="...">
+                <img src="olrs.jpeg" class="card-img-top img-responsive" style="height: 100% width100%;" alt="...">
                 </div>
                   <div class="flip-card-back">
                   <h6 class="date">2003-2015</h6>
@@ -671,7 +708,7 @@ h2{
             <h2>Volunteer Experience</h2>
             <div class="row">
               <div class="col-md-6">
-              <img src="b3.png" class="card-img-top img-responsive" id = "thumbnail" alt="...">
+              <img src="b3.png" class="card-img-top img-responsive" id = "thumbnail" alt="..."><br>
               </div>
               <div class="col-md-6">
                 <p><strong>DATE WITH OCEAN</strong></p>
