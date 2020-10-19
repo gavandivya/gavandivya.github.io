@@ -21,14 +21,13 @@
   <title>Divya Gavandi</title>  
 
 <link href="./main.d8e0d294.css" rel="stylesheet">
-<style type="text/css">
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
     .show{display:block;}
     .hide{display:none;}
 
-@import @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
-
-
-/*----------------------------------godfidence glow----------------------------------------------------*/
+/*------------------glow-----------------------*/
 
 .glow {
   font-size: 20px;
@@ -50,7 +49,7 @@
 }
 /*----------------------------------------border hover----------------------------------------------------*/
 
-#thumbnail:hover {
+.thumbnail:hover {
     display:block;
     z-index:999;
     transform: scale(1.1);
@@ -84,8 +83,8 @@
 /* Position the front and back side */
 .flip-card-front, .flip-card-back {
   position: absolute;
-  width: 100%
-  height: 100%
+  width: 100%;
+  height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
 }
@@ -141,7 +140,7 @@
 }
 
 
-#tilt {
+.tilt {
   -webkit-transition: all 0.5s ease;
      -moz-transition: all 0.5s ease;
        -o-transition: all 0.5s ease;
@@ -149,7 +148,7 @@
           transition: all 0.5s ease;
 }
  
-#tilt:hover {
+.tilt:hover {
   -webkit-transform: rotate(-20deg);
      -moz-transform: rotate(-20deg);
        -o-transform: rotate(-20deg);
@@ -376,8 +375,6 @@ h1 {
   font-size: 40px;
 }
 
-
-
 /* Animation */
 h1 {
   animation: animated-text 4s steps(29) 1s 1 normal both,
@@ -394,12 +391,13 @@ h2{
   to{width: 470px;}
 }
 
-
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 470px) {
   h1 {
     font-size: 25px;
   }
 
+
+@media only screen and (max-width: 450px) {
   h4 {
     font-size: 16px;
   }
@@ -416,27 +414,25 @@ h2{
     height:150px;
   }
 
+  .flip-card-front{
+    height: 150px;
+  }
+
   p{
     font-size: 14px;
+  }
 }
 @keyframes animated-text{
   from{width: 0;}
   to{width: 280px;}
 }
-
-
 /* cursor animations */
-
-
 @keyframes animated-cursor{
   from{border-right-color: rgba(0,255,0,.75);}
   to{border-right-color: transparent;}
 }
 
-
-
 </style>
-
 </head>
 <body>
 <!-- Add your content of header -->
@@ -468,7 +464,7 @@ h2{
 
 
 
-<!-- Add your site or app content here -->
+                                    <!--Container starts here -->
  
  <div class="container">
    <div class="row">
@@ -479,7 +475,7 @@ h2{
             <h2>About me</h2>
             <div class="row">
               <div class="col-md-4" id="linkWrapRotator">
-                <p><img style="border: solid 1px white; border-radius: 10px; " src="./assets/images/divya.jpeg" class="img-responsive" id="thumbnail" alt=""></p>
+                <p><img style="border: solid 1px white; border-radius: 10px; " src="./assets/images/divya.jpeg" class="img-responsive thumbnail" alt=""></p>
               </div>
               <div class="col-md-8">
               <p></p>
@@ -490,7 +486,7 @@ h2{
           </div>
         </div>
 
-<!---------------------------------------------------------------------------------------------------------------->
+                                    <!-- Projects -->
 	<div class="card">
           <div class="card-block">
             <h2>Projects</h2>
@@ -514,8 +510,8 @@ h2{
             <div class="work-experience">
               <h3 class="h5 date-title">Chatbot using DialogFlow</h3>
               <ul>
-                <li><strong>Building Chatbot for Online Food Ordering</strong> </br>Created a chatbot with help of Dialog Flow for a specific restaurant. OnlineEatsBot greets, helps the user to order food with right menu and quantity. It also informs users about the status of order.</li>
-                <li><strong>Chat-bot for emulating Lab Coordinator at Diagnostics center</strong> </br> The bot checks if the user is existing, then it fetches the existing test report else suggests the name of the tests that are available at their lab according to the patient's disease .</li>
+                <li><strong>Building Chatbot for Online Food Ordering</strong> <br>Created a chatbot with help of Dialog Flow for a specific restaurant. OnlineEatsBot greets, helps the user to order food with right menu and quantity. It also informs users about the status of order.</li>
+                <li><strong>Chat-bot for emulating Lab Coordinator at Diagnostics center</strong> <br> The bot checks if the user is existing, then it fetches the existing test report else suggests the name of the tests that are available at their lab according to the patient's disease .</li>
               </ul>
             </div>
               <div class="work-experience">
@@ -526,7 +522,8 @@ h2{
             </div>
           </div>
         </div>
-<!----------------------------------------------------------------------------------------------------------------->
+                                    <!-- Position Res-->
+
 
 	<div class="card">
           <div class="card-block">
@@ -540,11 +537,11 @@ h2{
               </p>
             </div>
             </div>
-            <div class="col-md-3" id="tilt"><br><br><br>
-            <img src="wie.png" class="card-img-top img-responsive" id="" alt="...">
+            <div class="col-md-3 tilt"><br><br><br>
+            <img src="wie.png" class="card-img-top img-responsive" alt="...">
             </div>
-            <div class="col-md-3" id="tilt"><br><br><br> 
-            <img src="ele.png" class="card-img-top img-responsive" id="" alt="...">
+            <div class="col-md-3 tilt"><br><br><br> 
+            <img src="ele.png" class="card-img-top img-responsive" alt="...">
             </div>
           </div>
           <div class="row">
@@ -556,14 +553,15 @@ h2{
               <p>Organised an event name <b>CASE STUDY (Grasper)</b> in the annual college fest : <b>TechKriti 2017</b> where all the diploma students were allowed. The event consisted of displaying two short videos without an audio and students asked to write the eye-catching and impactful message they learnt from it in just 10 minutes.</p>
             </div>
           </div>
-            <div class="col-md-3" id="tilt">
-            <img src="divz.jpeg" class="card-img-top img-responsive" id="" alt="...">
+            <div class="col-md-3 tilt">
+            <img src="divz.jpeg" class="card-img-top img-responsive" alt="...">
             </div>
             
         </div>
         </div>
       </div>
-      <!--------------------------------------------------------------------------------------------------------->
+                                          <!-- Education -->
+
         <div class="card">
           <div class="card-block">
             <h2>Education</h2>
@@ -573,7 +571,7 @@ h2{
                 	<div class="flip-card">
 					         <div class="flip-card-inner">
 					           <div class="flip-card-front">
-                  		<img src="spit.jpeg" class="card-img-top img-responsive" style="height: 100% width100%;"alt="...">
+                  		<img src="spit.jpeg" class="card-img-top img-responsive" style="height: 100%; width:100%;" alt="...">
                   		</div>
                       <div class="flip-card-back">
                       <h6 class="date">2018-Persuing</h6>
@@ -584,9 +582,9 @@ h2{
 				        </div>
 				    </div>
                   
-                  <!-----------------------------------------------------------------------
+                  <!--
                   <img id="picture1" src="ssc.jpeg" title="1" class="hide" width="310px">
-                  <input type="button" class="btn btn-primary" onclick="showImg(1);" value="View"> ---------------> 
+                  <input type="button" class="btn btn-primary" onclick="showImg(1);" value="View"> --> 
                 </div>
               </div>
               <div class="col-md-4">
@@ -594,7 +592,7 @@ h2{
                 <div class="flip-card">
 				<div class="flip-card-inner">
 				      <div class="flip-card-front">
-                 <img src="gpm.png" class="card-img-top img-responsive" style="height: 100% width100%;" alt="...">
+                 <img src="gpm.png" class="card-img-top img-responsive" style="height: 100% ;width:100%;" alt="...">
                  </div>
                   <div class="flip-card-back">
                   <h6 class="date">2015-2018</h6>
@@ -604,9 +602,9 @@ h2{
                   </div>
 				  </div>
 				</div>
-              <!-----------------------------------------------------------------------
+              <!--
                   <img id="picture2" src="ssc.jpeg" title="2" class="hide" width="310px">
-                  <input type="button" class="btn btn-primary" onclick="showImg(2);" value="View">-------------->
+                  <input type="button" class="btn btn-primary" onclick="showImg(2);" value="View">-->
                 </div>
               </div>
 
@@ -615,7 +613,7 @@ h2{
                 <div class="flip-card">
 				        <div class="flip-card-inner">
 				        <div class="flip-card-front">
-                <img src="olrs.jpeg" class="card-img-top img-responsive" style="height: 100% width100%;" alt="...">
+                <img src="olrs.jpeg" class="card-img-top img-responsive" style="height: 100%; width:100%;" alt="...">
                 </div>
                   <div class="flip-card-back">
                   <h6 class="date">2003-2015</h6>
@@ -625,15 +623,15 @@ h2{
                   </div>
 				  </div>
 				</div>
-                  <!-----------------------------------------------------------------------
+                  <!--
                   <img id="picture3" src="ssc.jpeg" title="3" class="hide" width="310px">
-                  <input type="button" class="btn btn-primary" onclick="showImg(3);" value= "View"> ------------->
+                  <input type="button" class="btn btn-primary" onclick="showImg(3);" value= "View"> -->
                 </div>
               </div>
               </div>
             </div>
 
-<!----------------------------------------------------------------------->
+                                    <!-- Skills -->
 
         </div> <div class="card">
           <div class="card-block">
@@ -687,7 +685,7 @@ h2{
         </div>
           </div>
         </div>
-<!----------------------------------------------------------------------->
+                                    <!-- License -->
 
         <div class="card">
           <div class="card-block">
@@ -703,13 +701,13 @@ h2{
           </div>
         </div>
 
-<!------------------------------------------------------------------------------------------------------------>
+                                    <!-- Volunteer -->
 		  <div class="card">
           <div class="card-block">
             <h2>Volunteer Experience</h2>
             <div class="row">
               <div class="col-md-6">
-              <img src="b3.png" class="card-img-top img-responsive" id = "thumbnail" alt="..."><br>
+              <img src="b3.png" class="card-img-top img-responsive thumbnail" alt="..."><br>
               </div>
               <div class="col-md-6">
                 <p><strong>DATE WITH OCEAN</strong></p>
@@ -726,18 +724,18 @@ h2{
             <br>
             <div class="row">
               <div class="col-md-4" style="margin-bottom: 15px;">
-              <img src="b4.png" class="card-img-top img-responsive" id = "thumbnail" alt="...">
+              <img src="b4.png" class="card-img-top img-responsive thumbnail" alt="...">
               </div>
-              <div class="col-md-4"style="margin-bottom: 15px;">
-              <img src="b1.png" class="card-img-top img-responsive" id = "thumbnail" alt="...">
+              <div class="col-md-4" style="margin-bottom: 15px;">
+              <img src="b1.png" class="card-img-top img-responsive thumbnail" alt="...">
               </div>
               <div class="col-md-4">
-              <img src="b6.png" class="card-img-top img-responsive" id = "thumbnail" alt="...">
+              <img src="b6.png" class="card-img-top img-responsive thumbnail" alt="...">
               </div>
             </div>
           </div>
         </div>
-<!------------------------------------------------------------------------------------------------------->
+                                    <!-- artwork -->
         <div class="card">
           <div class="card-block">
             <h2>My ArtWork</h2><br>
@@ -762,7 +760,7 @@ h2{
             </div>
           </div>
         </div>
-<!--------------------------------------------------------------------------------------------------------------->
+                                    <!-- Contact -->
         <div class="card">
           <div class="card-block">
             <h2>Contact</h2>
@@ -778,8 +776,7 @@ h2{
             </div>
           </div>
         </div>
-<!---------------------------------------------------------------------------------------------------------------
-
+<!--
         <div class="card">
           <div class="card-block">
             <h2>Projects</h2>
@@ -819,7 +816,7 @@ h2{
 
           </div>
           </div>
-        </div>------------------------------------>
+        </div>-->
         
        <!-- <div class="card">
           <div class="card-block">
@@ -836,11 +833,11 @@ h2{
               </div>
             </div>
           </div>
-        </div>------->
+        </div>-->
 
    </div>
  </div>
-
+</div>
 </main>
 <footer class="footer-container white-text-container text-center">
   <div class="container">
@@ -853,7 +850,7 @@ h2{
   </div>
 </footer>
 
-<!---<script>
+<!--<script>
   document.addEventListener("DOMContentLoaded", function (event) {
      scrollRevelation('.card');
   });
@@ -885,7 +882,7 @@ h2{
 </script>
 
 -->
-<script type="text/javascript" src="./main.bc58148c.js"></script>
+<script src="./main.bc58148c.js"></script>
 
 </body>
 
