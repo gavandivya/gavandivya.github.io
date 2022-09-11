@@ -346,7 +346,7 @@ animation: bar-fill-python 2s ease-out;
 
 /*-------------------------------------I am divya text-------------------------------------------------*/
 h1 {
-border-right: solid 3px rgba(0,255,0,.75);
+/* border-right: solid 3px rgba(0,255,0,.75); */
 margin: auto;
 /* white-space: nowrap;
 overflow: hidden;     */
@@ -414,11 +414,11 @@ to{border-right-color: transparent;}
 }
 
 .fa{
-    font-size: 35px;
+    font-size: 30px;
 }
 
 .fa-icon{
-    width: 60px;
+    width: 60px !important;
 }
 
 .cdnheight{
