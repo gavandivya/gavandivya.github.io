@@ -34,7 +34,7 @@ border-radius: 5px;}
 
 
 .thumbnail{
-    padding: 2px !important;
+    padding: 1px !important;
 }
 
 
@@ -418,7 +418,7 @@ to{border-right-color: transparent;}
 }
 }
 
-.fa{
+.fa-brands{
     font-size: 30px;
 }
 
