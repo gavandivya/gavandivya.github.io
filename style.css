@@ -422,6 +422,10 @@ to{border-right-color: transparent;}
     font-size: 30px;
 }
 
+.fa-brands:hover{
+    font-size: 35px;
+}
+
 .fa-icon{
     width: 60px !important;
 }
