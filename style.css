@@ -348,18 +348,18 @@ animation: bar-fill-python 2s ease-out;
 h1 {
 border-right: solid 3px rgba(0,255,0,.75);
 margin: auto;
-white-space: nowrap;
-overflow: hidden;    
+/* white-space: nowrap;
+overflow: hidden;     */
 font-family: 'Source Code Pro', monospace;  
 color: rgba(255,255,255,.70);
 font-size: 40px;
 }
 
 /* Animation */
-h1 {
+/* h1 {
 animation: animated-text 4s steps(29) 1s 1 normal both,
          animated-cursor 600ms steps(29) infinite;
-}
+} */
 
 h2{
 color: #fff;
@@ -411,4 +411,17 @@ to{width: 280px;}
 from{border-right-color: rgba(225, 255, 0, 0.75);}
 to{border-right-color: transparent;}
 }
+}
+
+.fa{
+    font-size: 35px;
+}
+
+.fa-icon{
+    width: 60px;
+}
+
+.cdnheight{
+    /* height: 75px; */
+    padding: 1rem;
 }
