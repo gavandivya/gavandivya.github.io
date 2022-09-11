@@ -29,8 +29,14 @@ text-shadow: 0 0 20px #fff, 0 0 30px #261174, 0 0 40px #261174, 0 0 50px #261174
 display:block;
 z-index:999;
 transform: scale(1.1);
-border: 2px solid #f2f2f2;
+border: 1px solid #f2f2f2;
 border-radius: 5px;}
+
+
+.thumbnail{
+    border: 1px solid #f2f2f2;
+}
+
 
 .flip-card {
 background-color: transparent;
@@ -97,7 +103,6 @@ margin-bottom:90px; /*to have the space under the image*/
 .hover03 figure:hover img {
 -webkit-transform: scale(1);
 transform: scale(1);
-
 }
 
 /*--------------------------------wie------------------------------------------------------------------*/
